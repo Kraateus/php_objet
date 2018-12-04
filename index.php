@@ -52,8 +52,9 @@
         //var_dump($person1->getLastname());
     
         $person2 =new Person();
-        $person2->setFirstname("je vais");
-        $person2->setLastname("réussir");
-        var_dump($person2->getFirtname());
-        var_dump($person2->getLastname());
+        $person2->setFirstname("Théo");
+        $person2->setLastname("le bobo");
+        var_dump($person2->speak());
+       // var_dump($person2->getFirtname());
+       // var_dump($person2->getLastname());
         
