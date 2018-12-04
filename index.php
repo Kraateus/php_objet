@@ -38,13 +38,18 @@
         public function getLastname() {
             return $this->lastname;
         }
+
+        public function speak() {
+            return "hello my name is " . $this->firstname . " " . $this->lastname;
+        }
     }
     
         $person1 =new Person();
-        $person1->setFirstname("john");
-        $person1->setLastname("john");
-        var_dump($person1->getFirtname());
-        var_dump($person1->getLastname());
+        $person1->setFirstname("je carry emerick");
+        $person1->setLastname("sur cs");
+        var_dump($person1->speak());
+        // var_dump($person1->getFirtname());
+        //var_dump($person1->getLastname());
     
         $person2 =new Person();
         $person2->setFirstname("je vais");
