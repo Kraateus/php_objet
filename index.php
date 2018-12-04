@@ -21,18 +21,34 @@
     class Person {
         Private $firstname;
         Private $lastname;
-        
+        /*Setter*/  
         public function setFirstname($pFirstname) {
             $this->firstname = $pFirstname;
         }
+        /*Setter*/
+        /*Getter*/
+        public function getFirtname() {
+            return $this->firstname;
+        }
+        /*Getter*/
         public function setLastname($plastname) {
             $this->lastname = $plastname;
+        }
+
+        public function getLastname() {
+            return $this->lastname;
         }
     }
     
         $person1 =new Person();
         $person1->setFirstname("john");
         $person1->setLastname("john");
-        var_dump($person1);
+        var_dump($person1->getFirtname());
+        var_dump($person1->getLastname());
     
+        $person2 =new Person();
+        $person2->setFirstname("je vais");
+        $person2->setLastname("réussir");
+        var_dump($person2->getFirtname());
+        var_dump($person2->getLastname());
         
