@@ -14,7 +14,12 @@ class Person {
         return $this->lastname;
     }
     public function speak(): string {
-        return "Je suis $this->firstname $this->lastname et mon chien est " . $this->dog->getName();
+        $string = "Je suis $this->firstname $this->lastname et mes chiens sont : ";
+        $listDogs = array();
+        foreach ($this->dogs as $dog) {
+            $listDogs[] = $dog->getName();
+        }
+        return $string . implode(', ', $listDogs);
     }
     public function buy(Dog $pDog) {
         $this->dogs[] = $pDog;
